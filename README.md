@@ -1,19 +1,19 @@
-# vuepress-plugin-canvas-nest
+# vuepress-plugin-nest
 
 > A vuepress plugin for canvas-nest.js
 
-[![npm](https://img.shields.io/npm/v/vuepress-plugin-canvas-nest.svg)](https://www.npmjs.com/package/vuepress-plugin-canvas-nest)
-[![GitHub stars](https://img.shields.io/github/stars/vxhly/vuepress-plugin-canvas-nest)](https://github.com/vxhly/vuepress-plugin-canvas-nest/stargazers)
-[![GitHub license](https://img.shields.io/github/license/vxhly/vuepress-plugin-canvas-nest)](https://github.com/vxhly/vuepress-plugin-canvas-nest/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/vuepress-plugin-nest.svg)](https://www.npmjs.com/package/vuepress-plugin-nest)
+[![GitHub stars](https://img.shields.io/github/stars/vxhly/vuepress-plugin-nest)](https://github.com/vxhly/vuepress-plugin-nest/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vxhly/vuepress-plugin-nest)](https://github.com/vxhly/vuepress-plugin-nest/blob/master/LICENSE)
 
 ## Install
 
 ``` bash
 # install dependencies
-npm i vuepress-plugin-canvas-nest -D
+npm i vuepress-plugin-nest -D
 
 # or use yarn
-yarn add vuepress-plugin-canvas-nest -D
+yarn add vuepress-plugin-nest -D
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ Write vuepress config
 
 ``` javascript
 module.exports = {
-  plugins: ['canvas-nest']
+  plugins: ['nest']
 }
 ```
 
@@ -32,7 +32,7 @@ This plugin supports the following configurations.
 
 ``` javascript
 module.exports = {
-  plugins: ['canvas-nest', {
+  plugins: ['nest', {
     color: '0,0,0', // color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
     pointColor: '0,0,0', // color of points, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
     opacity: 0.5, // the opacity of line (0~1), default: 0.5.
@@ -48,4 +48,4 @@ module.exports = {
 
 ## License
 
-[MIT](https://github.com/vxhly/vuepress-plugin-canvas-nest/blob/master/LICENSE).
+[MIT](https://github.com/vxhly/vuepress-plugin-nest/blob/master/LICENSE).

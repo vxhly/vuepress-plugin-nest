@@ -1,11 +1,11 @@
 {
-  "name": "vuepress-plugin-canvas-nest",
+  "name": "vuepress-plugin-nest",
   "version": "1.0.0",
   "description": "A vuepress plugin for canvas-nest.js",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/vxhly/vuepress-plugin-canvas-nest.git"
+    "url": "git+ssh://git@github.com/vxhly/vuepress-plugin-nest.git"
   },
   "keywords": [
     "vuepress",
@@ -17,9 +17,9 @@
   "author": "vxhly <pengchengou@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vxhly/vuepress-plugin-canvas-nest/issues"
+    "url": "https://github.com/vxhly/vuepress-plugin-nest/issues"
   },
-  "homepage": "https://github.com/vxhly/vuepress-plugin-canvas-nest#readme",
+  "homepage": "https://github.com/vxhly/vuepress-plugin-nest#readme",
   "dependencies": {
     "add-dom-event-listener": "^1.1.0",
     "canvas-nest.js": "^2.0.4"
