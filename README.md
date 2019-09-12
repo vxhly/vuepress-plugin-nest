@@ -2,6 +2,10 @@
 
 > A vuepress plugin for canvas-nest.js
 
+[![npm](https://img.shields.io/npm/v/vuepress-plugin-canvas-nest.svg)](https://www.npmjs.com/package/vuepress-plugin-canvas-nest)
+[![GitHub stars](https://img.shields.io/github/stars/vxhly/vuepress-plugin-canvas-nest)](https://github.com/vxhly/vuepress-plugin-canvas-nest/stargazers)
+[![GitHub license](https://img.shields.io/github/license/vxhly/vuepress-plugin-canvas-nest)](https://github.com/vxhly/vuepress-plugin-canvas-nest/blob/master/LICENSE)
+
 ## Install
 
 ``` bash
