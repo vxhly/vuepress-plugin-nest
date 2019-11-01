@@ -38,6 +38,7 @@ module.exports = {
     opacity: 0.5, // the opacity of line (0~1), default: 0.5.
     count: 99, // the number of lines, default: 99.
     zIndex: -1 // z-index property of the background, default: -1.
+    showInMobile: false // whether to display on the mobile side, default: false.
   }]
 }
 ```
