@@ -5,18 +5,24 @@ const {
 module.exports = (options = {}, context) => ({
   define() {
     const {
-      color = '0,0,0', pointColor = '0,0,0', opacity = 0.5, count = 99, zIndex = -1
+      color, 
+      pointColor, 
+      opacity, 
+      count, 
+      zIndex,
+      showInMobile
     } = options
 
     return {
-      COLOR: color,
-      POINT_COLOR: pointColor,
-      OPACITY: opacity,
-      COUNT: count,
-      Z_INDEX: zIndex
+      COLOR: color || '0,0,0,',
+      POINT_COLOR: pointColor || '0,0,0',
+      OPACITY: opacity || 0.5,
+      COUNT: count || 99,
+      Z_INDEX: zIndex || -1,
+      SHOW_IN_MOBILE: showInMobile || false
     }
   },
 
-  enhanceAppFiles: resolve(__dirname, "enhanceAppFile.js"),
+  enhanceAppFiles: resolve(__dirname, "./bin/enhanceAppFile.js"),
   globalUIComponents: "Nest"
 });

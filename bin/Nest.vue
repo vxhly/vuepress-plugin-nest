@@ -1,16 +1,16 @@
 <template>
   <div
-    class="vuepress-canvas-nest-element"
+    v-if="showNest"
     ref="nest"
-  >
-  </div>
+    class="vuepress-canvas-nest-element"
+  />
 </template>
 
 <script>
   import addDOMEventListener from "add-dom-event-listener";
 
   export default {
-    name: "VuePress-Nest",
+    name: "VuePressNest",
     data() {
       return {
         events: [
@@ -25,23 +25,32 @@
           "mousewheel"
         ],
         eventHandlers: {},
-        nest: null
+        nest: null,
+        showNest: true
       };
     },
     mounted() {
       // see https://v1.vuepress.vuejs.org/guide/using-vue.html#browser-api-access-restrictions
-      const CanvasNest = require("canvas-nest.js");
-      const elm = document.querySelector(".vuepress-canvas-nest-element");
-      this.nest = new CanvasNest(elm, {
-        color: COLOR,
-        pointColor: POINT_COLOR,
-        opacity: OPACITY,
-        count: COUNT,
-        zIndex: Z_INDEX
-      });
 
-      const target = typeof window !== "undefined" ? window : null;
-      this.setTargetEventListeners(target);
+      const isMobile = !!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+      if (!isMobile && !SHOW_IN_MOBILE) {
+        const CanvasNest = require("canvas-nest.js");
+        const elm = document.querySelector(".vuepress-canvas-nest-element");
+        this.nest = new CanvasNest(elm, {
+          color: COLOR,
+          pointColor: POINT_COLOR,
+          opacity: OPACITY,
+          count: COUNT,
+          zIndex: Z_INDEX
+        });
+
+        const target = typeof window !== "undefined" ? window : null;
+        this.setTargetEventListeners(target);
+      } else {
+        this.showNest = false;
+      }
     },
     beforeDestroy() {
       this.nest.destroy();
