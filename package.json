@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-nest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vuepress plugin for canvas-nest.js",
   "main": "index.js",
   "repository": {
